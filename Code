@@ -6,7 +6,7 @@ Serial.begin(9600);
 
 void loop() {
   // put your main code here, to run repeatedly:
-   if(digitalRead(6)==HIGH){
+   if((digitalRead(6)==HIGH)||(digitalRead(7)=HIGH)){
    Serial.println("Active");
    digitalWrite(LED_BUILTIN,HIGH);
    delay(1000);
